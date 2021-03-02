@@ -2,7 +2,7 @@
 
 //Class syntax has uppercase and provides us woth structure and readibility
 // this is an inline data model
-class ThingsModel {
+class PlacesModel {
     constructor() {
         this.id = 0;
         this.db = []
@@ -49,4 +49,4 @@ class ThingsModel {
 //     }
 }
 
-module.exports = ThingsModel;
+module.exports = PlacesModel;

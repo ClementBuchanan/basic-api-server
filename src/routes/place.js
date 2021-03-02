@@ -7,13 +7,13 @@ const items = new Places();
 
 const router = express.Router();
 
-router.get('/place', getPlaces);    // step 1 --> hit the route (REST)
+router.get('/place', getPlace);    // step 1 --> hit the route (REST)
 router.get('/place:id', getOnePlace);
 router.post('/place', createPlace);
-// router.put('/things/:id', updateThing);
-// router.delete('/things/:id', deleteThing);
+// router.put('/place/:id', updatePlace);
+// router.delete('/place/:id', deletePlace);
 
-function getThings(req, res) {
+function getPlace(req, res) {
     // step2 --> get all items from the db (CRUD)
     let all = items.get();
     // step 3 --> send those items back to the user (RESPONSE)

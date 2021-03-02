@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(placeRoutes);  // now all routes are modular
 
 
+
 // run this for everything
 app.use('*', notFound);
 //error handling middleware is always at the bottom of the file
