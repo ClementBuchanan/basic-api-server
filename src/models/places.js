@@ -35,18 +35,18 @@ class PlacesModel {
         return record;
     }
 
-    // UPDATE
-    // update(id, obj) {
-    //     if(id) {
-    //         return obj
-    //     }
-    // }
-    // DELETE
-//     delete(id) {
-//         if(id) {
-//             return null;
-//         }
-//     }
+    UPDATE
+    update(id, obj) {
+        if(id) {
+            return obj
+        }
+    }
+    DELETE
+    delete(id) {
+        if(id) {
+            return null;
+        }
+    }
 }
 
 module.exports = PlacesModel;
