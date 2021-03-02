@@ -19,27 +19,36 @@ class ThingsModel {
     }
 
     // CREATE === When we create something we increment (++id) the id, hold the thing given to the db item, then push it up to the db
-    create(db) {
+    // http:localhost: 3333/stuff
+    //req.body.name: = 'Clement'
+    //req.body.age: = 55;
+
+    // app.get('/stuff', (req, res) => {
+
+    // };
+
+    create(obj) {
         let record = {
-            id = ++this.id,
+            id: ++this.id,
             record: obj
         }
+        //The model of the record is as follows --> { id: 1, record: {name: 'Clement', age: 55 }}
         this.db.push(record);
         return record;
     }
 
     // UPDATE
-    update(id, obj) {
-        if(id) {
-            return obj
-        }
-    }
+    // update(id, obj) {
+    //     if(id) {
+    //         return obj
+    //     }
+    // }
     // DELETE
-    delete(id) {
-        if(id) {
-            return null;
-        }
-    }
+//     delete(id) {
+//         if(id) {
+//             return null;
+//         }
+//     }
 }
 
 module.exports = ThingsModel;
