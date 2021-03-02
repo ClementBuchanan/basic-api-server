@@ -11,12 +11,15 @@ const notFound = require('./error-handlers/404.js');
 const errors = require('./error-handlers/500.js');
 const logger = require('./middleware/logger.js');
 // const PlacesModel = require('./models/places.js');
-const placeRoutes = require('./routes/place.js');
+const placesRoutes = require('./routes/places.js');
+const animalsRoutes = require('./routes/animals.js');
 // internal constants
 const PORT = process.env.PORT || 3333;
 
 app.use(express.json());
-app.use(placeRoutes);  // now all routes are modular
+app.use(animalsRoutes);
+app.use(placesRoutes); 
+app.use(logger); // now all routes are modular
 
 
 
