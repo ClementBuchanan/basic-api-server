@@ -23,8 +23,6 @@ class ThingsModel {
     //req.body.name: = 'Clement'
     //req.body.age: = 55;
 
-    // app.get('/stuff', (req, res) => {
-
     // };
 
     create(obj) {
