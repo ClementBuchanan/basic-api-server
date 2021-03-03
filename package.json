@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
     "test": "jest --coverage",
-    "start": "node index.js"
+    "test-watch": "jest --watchAll --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,10 @@
   },
   "homepage": "https://github.com/ClementBuchanan/basic-api-server#readme",
   "dependencies": {
+    "eslint": "^7.21.0",
     "express": "^4.17.1",
     "jest": "^26.6.3",
+    "method-override": "^3.0.0",
     "supertest": "^6.1.3"
   }
 }
